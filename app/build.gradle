@@ -1,0 +1,64 @@
+apply plugin: 'com.android.application'
+
+buildscript {
+    repositories {
+
+        maven {//本地Maven仓库地址
+            url uri('/Users/Han/repo')
+        }
+
+        google()
+        jcenter()
+    }
+    dependencies {
+        classpath 'com.android.tools.build:gradle:3.3.2'
+        classpath 'com.yxf.buildtimetrackerplugin:buildtimetrackerplugin:1.0.3'
+    }
+}
+
+android {
+    compileSdkVersion 28
+    defaultConfig {
+        applicationId "com.yxf.pluginlearn"
+        minSdkVersion 15
+        targetSdkVersion 28
+        versionCode 1
+        versionName "1.0"
+        
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+}
+
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    implementation 'com.android.support:appcompat-v7:28.0.0'
+    implementation 'com.android.support.constraint:constraint-layout:1.1.3'
+    testImplementation 'junit:junit:4.12'
+    androidTestImplementation 'com.android.support.test:runner:1.0.2'
+    androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.2'
+}
+
+apply plugin: 'build-time-tracker'
+
+buildtimetracker {
+    reporters {
+        csv {
+            output "times.csv"
+            append true
+            header false
+        }
+
+        summary {
+        }
+
+        json {
+            output "output.json"
+        }
+    }
+}

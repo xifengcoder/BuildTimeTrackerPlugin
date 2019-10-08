@@ -1,0 +1,84 @@
+{
+    "success": true,
+    "count": 6,
+    "measurements": [
+        {
+            "timestamp": 1567391631499,
+            "order": 0,
+            "task": ":buildtimetrackerplugin:compileJava",
+            "success": true,
+            "did_work": false,
+            "skipped": true,
+            "ms": 133,
+            "date": "2019-09-02T02:33:51,499Z",
+            "cpu": "Intel(R) Core(TM) i7-3740QM CPU @ 2.70GHz",
+            "memory": 17179869184,
+            "os": "Mac OS X 10.14.5 x86_64"
+        },
+        {
+            "timestamp": 1567391631499,
+            "order": 1,
+            "task": ":buildtimetrackerplugin:compileGroovy",
+            "success": true,
+            "did_work": true,
+            "skipped": false,
+            "ms": 2153,
+            "date": "2019-09-02T02:33:51,499Z",
+            "cpu": "Intel(R) Core(TM) i7-3740QM CPU @ 2.70GHz",
+            "memory": 17179869184,
+            "os": "Mac OS X 10.14.5 x86_64"
+        },
+        {
+            "timestamp": 1567391631499,
+            "order": 2,
+            "task": ":buildtimetrackerplugin:processResources",
+            "success": true,
+            "did_work": false,
+            "skipped": true,
+            "ms": 11,
+            "date": "2019-09-02T02:33:51,499Z",
+            "cpu": "Intel(R) Core(TM) i7-3740QM CPU @ 2.70GHz",
+            "memory": 17179869184,
+            "os": "Mac OS X 10.14.5 x86_64"
+        },
+        {
+            "timestamp": 1567391631499,
+            "order": 3,
+            "task": ":buildtimetrackerplugin:classes",
+            "success": true,
+            "did_work": false,
+            "skipped": false,
+            "ms": 2,
+            "date": "2019-09-02T02:33:51,499Z",
+            "cpu": "Intel(R) Core(TM) i7-3740QM CPU @ 2.70GHz",
+            "memory": 17179869184,
+            "os": "Mac OS X 10.14.5 x86_64"
+        },
+        {
+            "timestamp": 1567391631499,
+            "order": 4,
+            "task": ":buildtimetrackerplugin:jar",
+            "success": true,
+            "did_work": true,
+            "skipped": false,
+            "ms": 97,
+            "date": "2019-09-02T02:33:51,499Z",
+            "cpu": "Intel(R) Core(TM) i7-3740QM CPU @ 2.70GHz",
+            "memory": 17179869184,
+            "os": "Mac OS X 10.14.5 x86_64"
+        },
+        {
+            "timestamp": 1567391631499,
+            "order": 5,
+            "task": ":buildtimetrackerplugin:uploadArchives",
+            "success": true,
+            "did_work": true,
+            "skipped": false,
+            "ms": 672,
+            "date": "2019-09-02T02:33:51,499Z",
+            "cpu": "Intel(R) Core(TM) i7-3740QM CPU @ 2.70GHz",
+            "memory": 17179869184,
+            "os": "Mac OS X 10.14.5 x86_64"
+        }
+    ]
+}
